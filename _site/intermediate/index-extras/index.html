@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GitHub Training</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/page.css">
+
+
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="alternate" type="application/atom+xml" title="Upcoming Events" href="/atom.xml">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/_javascript/bootstrap.min.js"></script>
+
+
+    <!--Scrollsnap-->
+    <script src="_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
+    <script src="_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
+    <script src="_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
+
+    <!--Curriculum setup JS-->
+    <script src="_javascript/curriculum.js"></script>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </head>
+
+  <body data-spy="scroll" data-target="#toc">
+    <header>
+<div class="container">
+  <a class="site-header-logo" href="https://services.github.com/">
+      <svg class="logo" viewbox="0 0 188.55 25.52"><defs><clippath id="clip-path" transform="translate(1.2 -0.4)"><path d="M16.24,11.57H9.42a0.33,0.33,0,0,0-.33.33v3.32a0.33,0.33,0,0,0,.33.33h2.66v4.13a7.47,7.47,0,0,1-2.26.22c-1.93,0-4.67-.69-4.67-6.68S8,6.46,10.62,6.46A11.05,11.05,0,0,1,14.53,7a0.32,0.32,0,0,0,.37-0.33L15.66,3.5a0.39,0.39,0,0,0-.11-0.26c-0.26-.18-1.83-1.06-5.77-1.06-4.49,0-9.16,2-9.16,11.24S6,24.09,10.48,24.09a11.2,11.2,0,0,0,6-1.57,0.25,0.25,0,0,0,.11-0.26V11.89a0.39,0.39,0,0,0-.33-0.33" fill="none"></path></clippath><clippath id="clip-path-2" transform="translate(1.2 -0.4)"><path d="M51.62,3.32A0.33,0.33,0,0,0,51.29,3H47.46a0.33,0.33,0,0,0-.33.33v7.37h-6V3.32A0.33,0.33,0,0,0,40.81,3H37a0.33,0.33,0,0,0-.33.33v20a0.33,0.33,0,0,0,.33.33h3.83a0.33,0.33,0,0,0,.33-0.33V14.78h6v8.54a0.33,0.33,0,0,0,.33.33h3.83a0.33,0.33,0,0,0,.33-0.33v-20" fill="none"></path></clippath><clippath id="clip-path-3" transform="translate(1.2 -0.4)"><path d="M23.62,5.94a2.48,2.48,0,1,0-2.48,2.48,2.46,2.46,0,0,0,2.48-2.48" fill="none"></path></clippath><clippath id="clip-path-4" transform="translate(1.2 -0.4)"><path d="M23.33,19.12V9.89A0.33,0.33,0,0,0,23,9.56H19.2a0.36,0.36,0,0,0-.33.37V23.14a0.47,0.47,0,0,0,.55.51h3.43a0.42,0.42,0,0,0,.47-0.51v-4" fill="none"></path></clippath><clippath id="clip-path-5" transform="translate(1.2 -0.4)"><path d="M66.51,9.59h-3.8a0.33,0.33,0,0,0-.33.33v9.82a4.28,4.28,0,0,1-2.34.69c-1.39,0-1.75-.62-1.75-2V9.92A0.33,0.33,0,0,0,58,9.59H54.1a0.33,0.33,0,0,0-.33.33v9.2c0,4,2.23,5,5.29,5a8.83,8.83,0,0,0,4.53-1.39s0.11,0.73.15,0.8a0.35,0.35,0,0,0,.29.18h2.45a0.33,0.33,0,0,0,.33-0.33V9.92a0.28,0.28,0,0,0-.29-0.33" fill="none"></path></clippath><clippath id="clip-path-6" transform="translate(1.2 -0.4)"><path d="M75.64,20.4a4.73,4.73,0,0,1-2.23-.62V13.43a4.73,4.73,0,0,1,2-.62c1.39-.11,2.7.29,2.7,3.54C78,19.78,77.46,20.47,75.64,20.4Zm1.5-11.24a7.16,7.16,0,0,0-3.61.95V3.32A0.33,0.33,0,0,0,73.19,3H69.36a0.33,0.33,0,0,0-.33.33v20a0.33,0.33,0,0,0,.33.33H72a0.37,0.37,0,0,0,.29-0.18,5.16,5.16,0,0,0,.15-0.91A6.87,6.87,0,0,0,77,24.05c3.5,0,5.51-1.75,5.51-7.92S79.29,9.16,77.13,9.16Z" fill="none"></path></clippath><clippath id="clip-path-7" transform="translate(1.2 -0.4)"><path d="M34.28,9.56H31.39V5.76a0.21,0.21,0,0,0-.26-0.22H27.23a0.19,0.19,0,0,0-.22.22V9.67l-2.08.51a0.28,0.28,0,0,0-.22.29v2.45a0.33,0.33,0,0,0,.33.33h2v5.91C27,23.54,30.12,24,32.2,24a9.22,9.22,0,0,0,2.3-.37,0.29,0.29,0,0,0,.18-0.29v-2.7a0.33,0.33,0,0,0-.33-0.33c-0.18,0-.58.07-1,0.07-1.42,0-1.9-.66-1.9-1.5V13.25h2.88a0.33,0.33,0,0,0,.33-0.33V9.85a0.39,0.39,0,0,0-.37-0.29" fill="none"></path></clippath></defs><title>logo-github-services</title>
+<path d="M92.07,8.43c0,3,1.72,3.25,5,3.65,4.05,0.51,6.57,1.53,6.57,5.59,0,2.81-1.5,6.24-7.67,6.24a16.94,16.94,0,0,1-5.8-1.1V21A15.65,15.65,0,0,0,96,22.19c4.31,0,5.62-2,5.62-4.53,0-3-1.2-3.54-4.67-4-4.89-.62-6.79-1.75-6.79-5.29,0-2.41,1.17-5.77,7-5.77a12.42,12.42,0,0,1,5.4,1V5.43a12.73,12.73,0,0,0-5.44-1.1C93,4.34,92.07,6.24,92.07,8.43Zm20.41,1.1c4.71,0,5.26,3.21,5.26,7.19v0.88H108.6c0.11,2.41.73,4.6,3.87,4.6a10.47,10.47,0,0,0,4.56-.77v1.64a11.15,11.15,0,0,1-4.56.84c-4.67,0-5.8-3.21-5.8-7.19S107.76,9.52,112.47,9.52ZM108.57,16h7.19c0-2.48-.15-4.78-3.32-4.78S108.67,13.54,108.57,16Zm20.08-4.56a5.11,5.11,0,0,0-1.64-.22,7.45,7.45,0,0,0-4,.88v11.5h-1.93V9.81h1.1l0.4,1.17A7.43,7.43,0,0,1,127,9.56a11,11,0,0,1,1.64.15v1.75h0ZM132,9.81l3.94,11.35,4-11.35H142l-5.4,14.13h-1.39L129.85,9.81H132Zm13.8-5.55a1.39,1.39,0,1,1-1.39,1.39A1.39,1.39,0,0,1,145.76,4.26Zm-0.95,16.61V9.81h1.9V21.09c0,1,.29,1.24,1.17,1.24V23.9C145.87,23.9,144.81,23.1,144.81,20.87ZM156.57,9.52a11.14,11.14,0,0,1,4.13.69v1.64a11.88,11.88,0,0,0-4.16-.62c-3.5,0-3.87,2.74-3.87,5.48s0.4,5.48,3.87,5.48a12.81,12.81,0,0,0,4.16-.62v1.64a11.14,11.14,0,0,1-4.13.69c-4.67,0-5.84-3.21-5.84-7.19S151.9,9.52,156.57,9.52Zm12.7,0c4.71,0,5.26,3.21,5.26,7.19v0.88H165.4c0.11,2.41.73,4.6,3.87,4.6a10.47,10.47,0,0,0,4.56-.77v1.64a11.15,11.15,0,0,1-4.56.84c-4.67,0-5.8-3.21-5.8-7.19S164.6,9.52,169.27,9.52ZM165.4,16h7.19c0-2.48-.15-4.78-3.32-4.78S165.48,13.54,165.4,16Zm17.08-.33c3.94,0.37,4.86,1.68,4.86,3.94S186,23.9,181.79,23.9a13.5,13.5,0,0,1-4.13-.69V21.57a12.74,12.74,0,0,0,4.16.62c2.88,0,3.65-1.2,3.65-2.52s-0.4-2.15-3.14-2.37c-4-.37-4.86-1.79-4.86-3.69s1.28-4.09,5.18-4.09a10.51,10.51,0,0,1,4,.69v1.64a11.42,11.42,0,0,0-4-.62c-2.74,0-3.32,1-3.32,2.37S179.82,15.47,182.49,15.69Z" transform="translate(1.2 -0.4)"></path><g clip-path="url(#clip-path)"><rect width="19.57" height="25.52"></rect></g><g clip-path="url(#clip-path-2)"><rect x="36.07" y="0.8" width="18.58" height="24.28"></rect></g><g clip-path="url(#clip-path-3)"><rect x="18.03" y="1.24" width="8.62" height="8.62"></rect></g><g clip-path="url(#clip-path-4)"><rect x="18.25" y="7.34" width="8.14" height="17.74"></rect></g><g clip-path="url(#clip-path-5)"><rect x="53.19" y="7.37" width="16.68" height="18.11"></rect></g><g clip-path="url(#clip-path-6)"><rect x="68.37" y="0.8" width="17.12" height="24.68"></rect></g><g clip-path="url(#clip-path-7)"><rect x="24.06" y="3.32" width="13.62" height="22.12"></rect></g></svg>
+
+    </a>
+</div>
+</header>
+
+<header class="colorful">
+
+  <div class="container">
+    
+      <h2>GitHub Intermediate</h2>
+      <p>Leveraging Git and GitHub from the command line</p>
+    
+
+
+    
+  </div>
+</header>
+
+
+    
+
+
+    <!-- Modal -->
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="timerModalLabel">Help / Shortcuts</h4>
+      </div>
+      <div class="modal-body">
+        <table>
+          <tr>
+            <th>Keyboard Command</th>
+            <th>Feature</th>
+          </tr>
+          <tr>
+            <td><code>?</code></td>
+            <td>Hide/show help</td>
+          </tr>
+          <tr>
+            <td>
+<code>shift</code>+<code>t</code>
+</td>
+            <td>Hide/show table of contents</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <th>URL Command</th>
+            <th>Feature</th>
+          </tr>
+          <tr>
+            <td><code>?teacher=[github-user]</code></td>
+            <td>Auto-generated teacher slide</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="help" class="help">
+  <div class="content">
+
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="timerModal" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <input type="number" id="minutes" name="minutes" min="1" max="60" value="5" placeholder="min" class="form-control time-amount">
+      <div class="time-left" id="time-left"></div>
+
+      <div class="modal-footer">
+        <button id="start-stop" type="submit" class="btn btn-default">Start</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-content deck  col-md-12 col-sm-12 col-xs-12 materials curriculum shift-left">
+  <div class="deprecation-notice">
+    Please note: This class and curriculum have now become a part of the two day <a href="https://services.github.com/kit/">GitHub for Developers course.</a>
+  </div>
+  <div id="teacher" class="slide hidden">
+    <div class="alignment">
+      <div id="teacher-avatar"></div>
+      <div class="" id="teacher-info">
+
+        <h3 id="teacher-name"></h3>
+
+        <span id="teacher-username">
+          <span class="octicon octicon-octoface"></span>
+        </span>
+
+        <span id="teacher-email">
+          <span class="octicon octicon-mail"></span>
+        </span>
+
+        <span id="teacher-organization">
+          <span class="octicon octicon-organization"></span>
+        </span>
+
+        <span id="teacher-location">
+          <span class="octicon octicon-location"></span>
+        </span>
+
+        <div class="teacher-badges">
+          <span id="teacher-repo" class="">
+            <span class="octicon octicon-repo"></span>
+          </span>
+
+          <span id="teacher-followers" class="">
+            <span class="octicon octicon-person"></span>
+          </span>
+
+          <span id="teacher-following" class="">
+            <span class="octicon octicon-steps"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>This curriculum will be your companion to the GitHub Intermediate class taught by the GitHub Training Team and other educational groups. In this course you’ll learn how to extensively leverage Git and GitHub from the command line.</p>
+
+<p><img src="../assets/screenshots/terminal-repo-creation.jpg" alt="Git repository creation at the command line"></p>
+
+<hr>
+
+<h3 id="git-configuration">Git Configuration</h3>
+
+<hr>
+
+<p><img src="../assets/screenshots/github-for-mac-advanced-preferences.png" alt="GitHub for Mac Advanced Preferences"></p>
+
+<p>Some configuration options have become defaults over time:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Enable use of color in output for Git versions older than 1.8.x</span>
+<span class="gp">$ </span>git config --[scope] color.ui auto
+</code></pre>
+</div>
+
+<h5 id="line-endings">Line endings</h5>
+<p>The line ending setting is one of the most common settings users choose to set early in their use of Git. Some Git configuration options, like this one, affect platform-targeted behavior:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Set line endings to LF for Mac and Linux</span>
+<span class="gp">$ </span>git config --[scope] core.autocrlf input
+</code></pre>
+</div>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Set line endings to CRLF for Windows</span>
+<span class="gp">$ </span>git config --[scope] core.autocrlf <span class="nb">true</span>
+</code></pre>
+</div>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># List all inherited configuration</span>
+<span class="gp">$ </span>git config --list
+</code></pre>
+</div>
+
+<hr>
+
+<h3 id="start-a-repository">Start a repository</h3>
+
+<hr>
+
+<hr>
+
+<h3 id="versioning-content">Versioning content</h3>
+
+<hr>
+
+<h4 id="three-stage-thinking">Three stage thinking</h4>
+<p><img src="../assets/diagrams/commit-three-stage.svg" alt="diagram"></p>
+
+<h4 id="commit-versions">Commit versions</h4>
+<p><img src="../assets/diagrams/commit-versions.svg" alt="diagram"></p>
+
+<h4 id="commit-dag">Commit DAG</h4>
+<p><img src="../assets/diagrams/commit-dag.svg" alt="diagram"></p>
+
+<h4 id="video">Video</h4>
+<iframe src="//player.vimeo.com/video/88315552" width="100%" height="350" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<hr>
+
+<h3 id="review-pending-modifications">Review pending modifications</h3>
+
+<hr>
+
+<p>Git advocates precision in each commit’s contents and commit message.  This is facilitated by easy reviewing of in-flight changes prior to describing them and making them permanent.</p>
+
+<p><img src="../assets/diagrams/diff.svg" alt="diagram"></p>
+
+<p>The simplest invocation of <code class="highlighter-rouge">diff</code> is the most common. It displays the difference of the files that have been modified.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git diff
+</code></pre>
+</div>
+
+<p>Git also creates a distinction between what is modified and unselected and what has been staged for commit. A single <code class="highlighter-rouge">diff</code> option switch allows for the inspection of each of these two groups of changes.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git diff --staged
+</code></pre>
+</div>
+
+<p>The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. There is, however, an option to instruct Git to perform and highlight intra-line comparisons.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Highlight word changes on lines</span>
+<span class="gp">$ </span>git diff --color-words
+</code></pre>
+</div>
+
+<p>Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, <code class="highlighter-rouge">diff</code> accepts a precise or wildcard-ed filename or path as an option.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># By specific file</span>
+<span class="gp">$ </span>git diff <span class="o">[</span>file-path]
+</code></pre>
+</div>
+
+<h4 id="video-1">Video</h4>
+<iframe src="//player.vimeo.com/video/88315553" width="100%" height="350" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<hr>
+
+<h3 id="review-historical-changes">Review historical changes</h3>
+
+<hr>
+
+<p>Git can look back at the history of each commit to see when a change took place, who made the change, or what the change contained.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git log
+</code></pre>
+</div>
+
+<p>Some simple option flag additions to the <code class="highlighter-rouge">log</code> command can make the output more concise.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Simple commit summaries</span>
+<span class="gp">$ </span>git log --oneline
+</code></pre>
+</div>
+
+<p>And if displaying the full contents of the change and word-level comparisons are helpful, there are option switches for that too.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Option switches common with `diff`</span>
+<span class="gp">$ </span>git log --patch --color-words
+</code></pre>
+</div>
+
+<h4 id="video-2">Video</h4>
+<iframe src="//player.vimeo.com/video/95811891" width="100%" height="350" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<hr>
+
+<h3 id="local-workflows">Local workflows</h3>
+
+<hr>
+
+<p>Organizing history:</p>
+
+<p><img src="../assets/diagrams/what-is-a-branch.svg" alt="diagram"></p>
+
+<hr>
+
+<h3 id="distributed-repositories">Distributed repositories</h3>
+
+<hr>
+
+<p>Acquiring a repo:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git clone <span class="o">[</span>repository-url]
+</code></pre>
+</div>
+
+<hr>
+
+<h3 id="remote-workflows">Remote workflows</h3>
+
+<hr>
+
+<p><img src="../assets/diagrams/fork-structure.svg" alt="diagram"></p>
+
+<hr>
+
+<h3 id="shortcuts-and-custom-commands">Shortcuts and custom commands</h3>
+
+<hr>
+
+<hr>
+
+<h3 id="file-lifecycle">File lifecycle</h3>
+
+<hr>
+
+<p><img src="../assets/diagrams/states-of-tracking.svg" alt="diagram"></p>
+
+<hr>
+
+<h3 id="undoing-changes">Undoing changes</h3>
+
+<hr>
+
+<hr>
+
+<h3 id="recovering-anything">Recovering anything</h3>
+
+<hr>
+
+</div>
+
+
+<div class="col-toc col-md-2 col-sm-2 col-xs-2 shift-left">
+  <div id="toc-wrapper">
+    <div id="toc" data-spy="affix" data-offset-top="145">
+      <h4>Table of Contents</h4>
+      <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
+        <li>
+      </li>
+</ul>
+      <ul class="nav display-controls">
+        <li>
+          <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
+          <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
+        </li>
+        <li>
+          <div class="timer-toggle"></div>
+          <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
+          <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <footer class="bg-gray-light border-top py-4 text-gray text-center mt-6 flex-none">
+  <span aria-label="Made with love by GitHub and friends">
+    <a href="/community/" class="text-gray-dark mb-2">Made with <img class="emoji" title=":heart:" alt=":heart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png" height="20" width="20" align="absmiddle"> by <img class="emoji" title=":octocat:" alt=":octocat:" src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle">s and friends</a>
+  </span>  
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="/feed.xml" class="d-flex flex-items-center text-gray text-uppercase mr-4"><div class="d-flex mr-1"><svg width="10" height="16" viewbox="0 0 10 16" xmlns="http://www.w3.org/2000/svg"><title>rss</title>
+<path d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z" fill="#000" fill-rule="evenodd"></path></svg></div> Feed</a>
+    <a href="/community" class="d-flex flex-items-center text-gray text-uppercase"><div class="d-flex mr-1"><svg width="16" height="16" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>organization</title>
+<path d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4" fill="#221F20" fill-rule="evenodd"></path></svg></div> Community</a>
+  </div>
+  
+  <p>© 2018 GitHub, Inc. Powered by <a href="http://jekyllrb.com" rel="nofollow" class="text-gray-dark">Jekyll</a> &amp; <a href="https://github.com/primer/primer-css" rel="nofollow" class="text-gray-dark">Primer</a>.</p>
+</footer>
+
+  </body>
+</html>

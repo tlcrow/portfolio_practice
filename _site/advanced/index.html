@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GitHub Training</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/page.css">
+
+
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="alternate" type="application/atom+xml" title="Upcoming Events" href="/atom.xml">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/_javascript/bootstrap.min.js"></script>
+
+
+    <!--Scrollsnap-->
+    <script src="_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
+    <script src="_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
+    <script src="_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
+
+    <!--Curriculum setup JS-->
+    <script src="_javascript/curriculum.js"></script>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </head>
+
+  <body data-spy="scroll" data-target="#toc">
+    <header>
+<div class="container">
+  <a class="site-header-logo" href="https://services.github.com/">
+      <svg class="logo" viewbox="0 0 188.55 25.52"><defs><clippath id="clip-path" transform="translate(1.2 -0.4)"><path d="M16.24,11.57H9.42a0.33,0.33,0,0,0-.33.33v3.32a0.33,0.33,0,0,0,.33.33h2.66v4.13a7.47,7.47,0,0,1-2.26.22c-1.93,0-4.67-.69-4.67-6.68S8,6.46,10.62,6.46A11.05,11.05,0,0,1,14.53,7a0.32,0.32,0,0,0,.37-0.33L15.66,3.5a0.39,0.39,0,0,0-.11-0.26c-0.26-.18-1.83-1.06-5.77-1.06-4.49,0-9.16,2-9.16,11.24S6,24.09,10.48,24.09a11.2,11.2,0,0,0,6-1.57,0.25,0.25,0,0,0,.11-0.26V11.89a0.39,0.39,0,0,0-.33-0.33" fill="none"></path></clippath><clippath id="clip-path-2" transform="translate(1.2 -0.4)"><path d="M51.62,3.32A0.33,0.33,0,0,0,51.29,3H47.46a0.33,0.33,0,0,0-.33.33v7.37h-6V3.32A0.33,0.33,0,0,0,40.81,3H37a0.33,0.33,0,0,0-.33.33v20a0.33,0.33,0,0,0,.33.33h3.83a0.33,0.33,0,0,0,.33-0.33V14.78h6v8.54a0.33,0.33,0,0,0,.33.33h3.83a0.33,0.33,0,0,0,.33-0.33v-20" fill="none"></path></clippath><clippath id="clip-path-3" transform="translate(1.2 -0.4)"><path d="M23.62,5.94a2.48,2.48,0,1,0-2.48,2.48,2.46,2.46,0,0,0,2.48-2.48" fill="none"></path></clippath><clippath id="clip-path-4" transform="translate(1.2 -0.4)"><path d="M23.33,19.12V9.89A0.33,0.33,0,0,0,23,9.56H19.2a0.36,0.36,0,0,0-.33.37V23.14a0.47,0.47,0,0,0,.55.51h3.43a0.42,0.42,0,0,0,.47-0.51v-4" fill="none"></path></clippath><clippath id="clip-path-5" transform="translate(1.2 -0.4)"><path d="M66.51,9.59h-3.8a0.33,0.33,0,0,0-.33.33v9.82a4.28,4.28,0,0,1-2.34.69c-1.39,0-1.75-.62-1.75-2V9.92A0.33,0.33,0,0,0,58,9.59H54.1a0.33,0.33,0,0,0-.33.33v9.2c0,4,2.23,5,5.29,5a8.83,8.83,0,0,0,4.53-1.39s0.11,0.73.15,0.8a0.35,0.35,0,0,0,.29.18h2.45a0.33,0.33,0,0,0,.33-0.33V9.92a0.28,0.28,0,0,0-.29-0.33" fill="none"></path></clippath><clippath id="clip-path-6" transform="translate(1.2 -0.4)"><path d="M75.64,20.4a4.73,4.73,0,0,1-2.23-.62V13.43a4.73,4.73,0,0,1,2-.62c1.39-.11,2.7.29,2.7,3.54C78,19.78,77.46,20.47,75.64,20.4Zm1.5-11.24a7.16,7.16,0,0,0-3.61.95V3.32A0.33,0.33,0,0,0,73.19,3H69.36a0.33,0.33,0,0,0-.33.33v20a0.33,0.33,0,0,0,.33.33H72a0.37,0.37,0,0,0,.29-0.18,5.16,5.16,0,0,0,.15-0.91A6.87,6.87,0,0,0,77,24.05c3.5,0,5.51-1.75,5.51-7.92S79.29,9.16,77.13,9.16Z" fill="none"></path></clippath><clippath id="clip-path-7" transform="translate(1.2 -0.4)"><path d="M34.28,9.56H31.39V5.76a0.21,0.21,0,0,0-.26-0.22H27.23a0.19,0.19,0,0,0-.22.22V9.67l-2.08.51a0.28,0.28,0,0,0-.22.29v2.45a0.33,0.33,0,0,0,.33.33h2v5.91C27,23.54,30.12,24,32.2,24a9.22,9.22,0,0,0,2.3-.37,0.29,0.29,0,0,0,.18-0.29v-2.7a0.33,0.33,0,0,0-.33-0.33c-0.18,0-.58.07-1,0.07-1.42,0-1.9-.66-1.9-1.5V13.25h2.88a0.33,0.33,0,0,0,.33-0.33V9.85a0.39,0.39,0,0,0-.37-0.29" fill="none"></path></clippath></defs><title>logo-github-services</title>
+<path d="M92.07,8.43c0,3,1.72,3.25,5,3.65,4.05,0.51,6.57,1.53,6.57,5.59,0,2.81-1.5,6.24-7.67,6.24a16.94,16.94,0,0,1-5.8-1.1V21A15.65,15.65,0,0,0,96,22.19c4.31,0,5.62-2,5.62-4.53,0-3-1.2-3.54-4.67-4-4.89-.62-6.79-1.75-6.79-5.29,0-2.41,1.17-5.77,7-5.77a12.42,12.42,0,0,1,5.4,1V5.43a12.73,12.73,0,0,0-5.44-1.1C93,4.34,92.07,6.24,92.07,8.43Zm20.41,1.1c4.71,0,5.26,3.21,5.26,7.19v0.88H108.6c0.11,2.41.73,4.6,3.87,4.6a10.47,10.47,0,0,0,4.56-.77v1.64a11.15,11.15,0,0,1-4.56.84c-4.67,0-5.8-3.21-5.8-7.19S107.76,9.52,112.47,9.52ZM108.57,16h7.19c0-2.48-.15-4.78-3.32-4.78S108.67,13.54,108.57,16Zm20.08-4.56a5.11,5.11,0,0,0-1.64-.22,7.45,7.45,0,0,0-4,.88v11.5h-1.93V9.81h1.1l0.4,1.17A7.43,7.43,0,0,1,127,9.56a11,11,0,0,1,1.64.15v1.75h0ZM132,9.81l3.94,11.35,4-11.35H142l-5.4,14.13h-1.39L129.85,9.81H132Zm13.8-5.55a1.39,1.39,0,1,1-1.39,1.39A1.39,1.39,0,0,1,145.76,4.26Zm-0.95,16.61V9.81h1.9V21.09c0,1,.29,1.24,1.17,1.24V23.9C145.87,23.9,144.81,23.1,144.81,20.87ZM156.57,9.52a11.14,11.14,0,0,1,4.13.69v1.64a11.88,11.88,0,0,0-4.16-.62c-3.5,0-3.87,2.74-3.87,5.48s0.4,5.48,3.87,5.48a12.81,12.81,0,0,0,4.16-.62v1.64a11.14,11.14,0,0,1-4.13.69c-4.67,0-5.84-3.21-5.84-7.19S151.9,9.52,156.57,9.52Zm12.7,0c4.71,0,5.26,3.21,5.26,7.19v0.88H165.4c0.11,2.41.73,4.6,3.87,4.6a10.47,10.47,0,0,0,4.56-.77v1.64a11.15,11.15,0,0,1-4.56.84c-4.67,0-5.8-3.21-5.8-7.19S164.6,9.52,169.27,9.52ZM165.4,16h7.19c0-2.48-.15-4.78-3.32-4.78S165.48,13.54,165.4,16Zm17.08-.33c3.94,0.37,4.86,1.68,4.86,3.94S186,23.9,181.79,23.9a13.5,13.5,0,0,1-4.13-.69V21.57a12.74,12.74,0,0,0,4.16.62c2.88,0,3.65-1.2,3.65-2.52s-0.4-2.15-3.14-2.37c-4-.37-4.86-1.79-4.86-3.69s1.28-4.09,5.18-4.09a10.51,10.51,0,0,1,4,.69v1.64a11.42,11.42,0,0,0-4-.62c-2.74,0-3.32,1-3.32,2.37S179.82,15.47,182.49,15.69Z" transform="translate(1.2 -0.4)"></path><g clip-path="url(#clip-path)"><rect width="19.57" height="25.52"></rect></g><g clip-path="url(#clip-path-2)"><rect x="36.07" y="0.8" width="18.58" height="24.28"></rect></g><g clip-path="url(#clip-path-3)"><rect x="18.03" y="1.24" width="8.62" height="8.62"></rect></g><g clip-path="url(#clip-path-4)"><rect x="18.25" y="7.34" width="8.14" height="17.74"></rect></g><g clip-path="url(#clip-path-5)"><rect x="53.19" y="7.37" width="16.68" height="18.11"></rect></g><g clip-path="url(#clip-path-6)"><rect x="68.37" y="0.8" width="17.12" height="24.68"></rect></g><g clip-path="url(#clip-path-7)"><rect x="24.06" y="3.32" width="13.62" height="22.12"></rect></g></svg>
+
+    </a>
+</div>
+</header>
+
+<header class="colorful">
+
+  <div class="container">
+    
+      <h2>GitHub Advanced</h2>
+      <p>Mastering Git and GitHub</p>
+    
+
+
+    
+  </div>
+</header>
+
+
+    
+
+
+    <!-- Modal -->
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="timerModalLabel">Help / Shortcuts</h4>
+      </div>
+      <div class="modal-body">
+        <table>
+          <tr>
+            <th>Keyboard Command</th>
+            <th>Feature</th>
+          </tr>
+          <tr>
+            <td><code>?</code></td>
+            <td>Hide/show help</td>
+          </tr>
+          <tr>
+            <td>
+<code>shift</code>+<code>t</code>
+</td>
+            <td>Hide/show table of contents</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <th>URL Command</th>
+            <th>Feature</th>
+          </tr>
+          <tr>
+            <td><code>?teacher=[github-user]</code></td>
+            <td>Auto-generated teacher slide</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="help" class="help">
+  <div class="content">
+
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="timerModal" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <input type="number" id="minutes" name="minutes" min="1" max="60" value="5" placeholder="min" class="form-control time-amount">
+      <div class="time-left" id="time-left"></div>
+
+      <div class="modal-footer">
+        <button id="start-stop" type="submit" class="btn btn-default">Start</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-content deck  col-md-12 col-sm-12 col-xs-12 materials curriculum shift-left">
+  <div class="deprecation-notice">
+    Please note: This class and curriculum have now become a part of the two day <a href="https://services.github.com/kit/">GitHub for Developers course.</a>
+  </div>
+  <div id="teacher" class="slide hidden">
+    <div class="alignment">
+      <div id="teacher-avatar"></div>
+      <div class="" id="teacher-info">
+
+        <h3 id="teacher-name"></h3>
+
+        <span id="teacher-username">
+          <span class="octicon octicon-octoface"></span>
+        </span>
+
+        <span id="teacher-email">
+          <span class="octicon octicon-mail"></span>
+        </span>
+
+        <span id="teacher-organization">
+          <span class="octicon octicon-organization"></span>
+        </span>
+
+        <span id="teacher-location">
+          <span class="octicon octicon-location"></span>
+        </span>
+
+        <div class="teacher-badges">
+          <span id="teacher-repo" class="">
+            <span class="octicon octicon-repo"></span>
+          </span>
+
+          <span id="teacher-followers" class="">
+            <span class="octicon octicon-person"></span>
+          </span>
+
+          <span id="teacher-following" class="">
+            <span class="octicon octicon-steps"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+<p><span class="mega-octicon octicon-microscope"></span></p>
+
+<h1 id="github-advanced">GitHub Advanced</h1>
+
+<p>Command line deep dive, problem solving techniques, and GitHub efficiencies</p>
+
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Understand and apply commit DAG concepts</label>
+<input type="checkbox" id="obj2"><label for="obj2">Create tag release on GitHub and command line</label>
+<input type="checkbox" id="obj3"><label for="obj3">Apply ignore patterns to projects</label>
+<input type="checkbox" id="obj4"><label for="obj4">Improve day-to-day efficiency with shortcuts</label>
+<input type="checkbox" id="obj5"><label for="obj5">Capture and rewrite branch history</label>
+<input type="checkbox" id="obj6"><label for="obj6">Use multiple remote repository interactions</label>
+<input type="checkbox" id="obj7"><label for="obj7">Use external Git repositories as dependencies</label>
+<input type="checkbox" id="obj8"><label for="obj8">Interact with GitHub from the command line</label>
+</div>
+
+<hr>
+
+<hr>
+
+<h2 id="understanding-git">Understanding Git</h2>
+<h2 id="navigating-history">Navigating history</h2>
+
+<p>Explore the structure and way change is preserved in Git.</p>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/commit-data-structure.svg" alt="Git data structure"></p>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/commit-dag.svg" alt="Commit DAG"></p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git log [branch]..[branch]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git log [branch]...[branch]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git log --left-right
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git log --diff-filter=[A|M|D]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git branch --merged
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git branch --no-merged
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git rev-parse [commit-shorthand]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git name-rev [commit]
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Understand the way Git preserves history and data</li>
+  <li>Use shorthands to navigate commit history</li>
+  <li>Filter <code class="highlighter-rouge">log</code> option switches for refined version querying</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details">Details</h3>
+<p>Git version control is composed of three fundamental object types</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object Type</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blob</td>
+      <td>Store file content</td>
+    </tr>
+    <tr>
+      <td>Tree</td>
+      <td>Preserve path and structure</td>
+    </tr>
+    <tr>
+      <td>Commit</td>
+      <td>Serve as unique historical reference</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These three data types use a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blob <em>fingerprints</em>.</p>
+
+<h4 id="commitish">Commitish</h4>
+<p>Historical commit points are simple to discuss using <em>commitish</em> rather than hexadecimal SHA1 identifiers. This shorthand works on the command line, as well as on <a href="https://help.github.com/articles/comparing-commits-across-time">GitHub</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shorthand</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">HEAD</code></td>
+      <td>Current commit</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">HEAD^2</code></td>
+      <td>Second parent if merge commit, otherwise second ancestor</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">HEAD~2</code></td>
+      <td>Second ancestor of the current commit</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">HEAD@{one.day.ago}</code></td>
+      <td>Reachable by current branch from one day ago</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">HEAD@{today}</code></td>
+      <td>All commits reachable by current branch made <em>today</em>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="navigating-history-1">Navigating history</h4>
+<p>The <code class="highlighter-rouge">log</code> command is like a search engine. By default it shows all history, but one can refine the output to view commits by: author and committer, the time changes occurred, patch content, or even the message description. This is called revision selection.</p>
+
+<p>Show only those commits made by a given Git <code class="highlighter-rouge">user.name</code>, or within a particular time range:</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git log --author <span class="o">[</span>author-name]
+<span class="gp">$ </span>git log --since <span class="o">[</span>integer].days.ago
+</code></pre>
+</div>
+
+<p>Searching by a string or regular expression is often the most efficient way of finding history:</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git log -S <span class="o">[</span>string-in-patch]
+<span class="gp">$ </span>git log -G <span class="o">[</span>regex-pattern-in-patch]
+<span class="gp">$ </span>git log --grep<span class="o">=[</span>regex-in-message]
+</code></pre>
+</div>
+
+<p>Filtering by file state, i.e. <em>added</em> (A), <em>modified</em> (M), or <em>deleted</em> (D):</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git log --diff-filter<span class="o">=[</span>A|M|D]
+<span class="gp">$ </span>git log --follow --stat --diff-filter<span class="o">=[</span>A|M|D] -- &lt;filename&gt;
+</code></pre>
+</div>
+
+<p>Specifying commit ranges, as detailed on the <a href="http://git-scm.com/book/en/Git-Tools-Revision-Selection">Git-SCM.com web site</a>:</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git log --oneline --left-right master..other
+<span class="gp">$ </span>git log --oneline --left-right master...other
+</code></pre>
+</div>
+
+<h3 id="videos">Videos</h3>
+<iframe src="//player.vimeo.com/video/95811891" width="500" height="350" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<hr>
+
+<h2 id="collaborating-on-change--releases">Collaborating on change &amp; releases</h2>
+
+<p>Cutting and creating releases on the command line and on GitHub.</p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git tag [tagname] [commit]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git tag -a [tagname] [commit]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git push [remote] [tagname]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git tag -d [tagname]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git describe
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git tag -s -m "[message]" [tagname] [commit]
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Use the command line for branching strategies</li>
+  <li>Understand best branch and collaboration workflows</li>
+  <li>Apply <code class="highlighter-rouge">tag</code>s to commits to indicate releases</li>
+</ol>
+
+  </div>
+</div>
+
+<hr>
+
+<p><img src="../assets/diagrams/tag.svg" alt="Tags"></p>
+
+<hr>
+
+<h3 id="details-1">Details</h3>
+
+<h4 id="branching-patterns-best-practices">Branching patterns, best practices</h4>
+<ul>
+  <li>Branch by feature
+ Compatibility with Pull Requests</li>
+  <li>GitHub Flow
+    <ul>
+      <li><a href="https://github.com/blog/919-how-github-develops">How GitHub Develops</a></li>
+      <li><a href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow blog post</a></li>
+      <li>Works well with Pull Requests when one-layer deep</li>
+      <li>Think of features much smaller than typical</li>
+    </ul>
+  </li>
+  <li>git-flow
+    <ul>
+      <li>Made popular on Git by Vincent Driessen and his NVIE site</li>
+      <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">Git-Flow: A Successful Branching Model</a></li>
+      <li><a href="https://github.com/nvie/gitflow">Git-Flow Source</a></li>
+      <li>Too many levels?</li>
+      <li>GH prefers “Simplest thing that works”</li>
+    </ul>
+  </li>
+  <li>Rebase before sharing (sending a Pull Request)
+    <ul>
+      <li><a href="https://github.com/spring-projects/spring-social/wiki/Contributing">Contributing to Spring Social</a></li>
+      <li><a href="http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/">How To Merge Without Fear</a></li>
+      <li><a href="http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/">What to do when things get complicated</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="cutting-releases">Cutting releases</h4>
+<ul>
+  <li>Why create a tag through the web UI?</li>
+  <li>Not a branch HEAD. Points to a specific commit.</li>
+  <li>Attaching binaries to releases (Web UI and API)</li>
+  <li>Tag with message (defaults to annotated)</li>
+  <li>Force existing tag to new ref</li>
+  <li>Delete a tag</li>
+  <li>
+<code class="highlighter-rouge">$ git describe</code> to name the most recent reachable tag</li>
+  <li>Tag types (reference, annotated, signed)</li>
+  <li>Deleting a tag locally</li>
+  <li>Deleting tag on a remote</li>
+  <li>Version numbers
+    <ul>
+      <li><code class="highlighter-rouge">major.minor.fix</code></li>
+      <li><a href="http://semver.org">Semantic versioning</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Generating a lightweight reference tag is simple:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git tag <span class="o">[</span>TAGNAME] <span class="o">[</span>commit]
+</code></pre>
+</div>
+
+<p>Annotated tags generate a complete data object in the Git repository, storing the author, a timestamp, a specific SHA1 reference, and an optional GPG key for signing work.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git tag -a <span class="o">[</span>TAG_NAME] <span class="o">[</span>commit|branch]
+<span class="gp">$ </span>git tag -a -m <span class="o">[</span>TAG_NAME] <span class="o">[</span>commit|branch]
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">tag</code> command offers a number of ways to understand what it represents, ways of replacing it, and even the option of eliminating it if necessary.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git tag -s -m[message] <span class="o">[</span>TAGNAME]
+<span class="gp">$ </span>git tag -f <span class="o">[</span>TAGNAME]
+<span class="gp">$ </span>git tag -d <span class="o">[</span>TAGNAME]
+<span class="gp">$ </span>git describe
+<span class="gp">$ </span>git describe <span class="o">[</span>SHA]
+<span class="gp">$ </span>git tag -d 12345
+<span class="gp">$ </span>git push origin :[tag-name-to-delete]
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="ignoring--cleaning-up-files">Ignoring &amp; cleaning up files</h2>
+
+<p>Avoid tracking unimportant files.</p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ vi .gitignore
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git config core.excludesfile [path]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git add -f [path]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git clean -f
+$ git clean -fd
+$ git clean -fx
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Set ignore patterns to prevent accidental versioning</li>
+  <li>Clean working directory of untracked files</li>
+  <li>Tidy working directory of any <code class="highlighter-rouge">.gitignore</code> matched files</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-2">Details</h3>
+<h4 id="repository-specific-ignores">Repository-specific ignores</h4>
+<ul>
+  <li>Ignoring files from repo &amp; system level</li>
+  <li>Reviewing ignored files with custom command</li>
+  <li>Forcing a staging of ignored files</li>
+</ul>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>vi .gitignore
+</code></pre>
+</div>
+
+<h4 id="system-wide-ignores">System-wide ignores</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git config core.excludesfile <span class="o">[</span>path]
+</code></pre>
+</div>
+
+<h4 id="listing-ignored-files">Listing ignored files</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git config alias.show-ignored <span class="se">\</span>
+    <span class="s2">"ls-files --exclude-standard
+    --others --ignored"</span>
+</code></pre>
+</div>
+
+<h4 id="staging-ignored-files">Staging ignored files</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git add -f <span class="o">[</span>path]
+</code></pre>
+</div>
+
+<h4 id="removing-unwanted-files">Removing unwanted files</h4>
+<ul>
+  <li>Purge untracked in working directory</li>
+  <li>for directories</li>
+  <li>for removing ignored files (useful for tidying build artifacts)</li>
+</ul>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git clean -f
+$ git clean -fd
+$ git clean -fx
+</code></pre>
+</div>
+
+<h3 id="video">Video</h3>
+<iframe src="//player.vimeo.com/video/99804597" width="500" height="350" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<hr>
+
+<h2 id="mastering-shortcuts--efficiencies">Mastering shortcuts &amp; efficiencies</h2>
+
+<p>Speed up your workflow.</p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git commit -a -m"[message]"
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git commit --amend -m "[updated message]"
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git checkout -b [branch] [base]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git stash
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># Stage by patch
+$ git add -p [file]
+
+# Unstage by patch
+git reset HEAD -p [file]
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Use built-in shortcuts for committing and branch switching</li>
+  <li>Learn when to use <code class="highlighter-rouge">stash</code> and when to use longer-living branches</li>
+  <li>Commit partial file content <em>hunks</em> with <code class="highlighter-rouge">add</code> and <code class="highlighter-rouge">reset</code> patch switches</li>
+  <li>Avoiding repetitive conflict resolution with <code class="highlighter-rouge">rerere</code>
+</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-3">Details</h3>
+<h4 id="shortcuts">Shortcuts</h4>
+<ul>
+  <li>Shortcuts to multiple steps</li>
+  <li>Useful custom commands</li>
+</ul>
+
+<p>Add and commit along with the commit message:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git commit -am <span class="s2">"[message]"</span>
+</code></pre>
+</div>
+
+<p>Commit, amend, and provide the commit message:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git commit --amend -m <span class="s2">"[updated message]"</span>
+</code></pre>
+</div>
+
+<p>Checkout and create a branch:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git checkout -b <span class="o">[</span>branch] <span class="o">[</span>base]
+</code></pre>
+</div>
+
+<h4 id="temporary-changes">Temporary changes</h4>
+<ul>
+  <li>Name your stash</li>
+  <li>List stashes</li>
+  <li>Use specific stashes</li>
+</ul>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git stash
+<span class="gp">$ </span>git stash save <span class="s2">"&lt;description&gt;"</span>
+<span class="gp">$ </span>git stash --include-untracked
+<span class="gp">$ </span>git stash list
+<span class="gp">$ </span>git stash pop &lt;name&gt;
+<span class="gp">$ </span>git stash drop &lt;name&gt;
+<span class="gp">$ </span>git stash apply
+<span class="gp">$ </span>git stash clear
+<span class="gp">$ </span>git stash -p
+</code></pre>
+</div>
+
+<h4 id="isolating-work">Isolating Work</h4>
+<ul>
+  <li>Version patches of large change sets</li>
+  <li>Stage interactively on command line</li>
+  <li>Revise to-be-committed patch</li>
+</ul>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code> Stage by patch
+<span class="gp">$ </span>git add -p <span class="o">[</span>file]
+
+ Unstage by patch
+git reset HEAD -p <span class="o">[</span>file]
+</code></pre>
+</div>
+
+<h4 id="avoiding-repetitive-conflicts">Avoiding repetitive conflicts</h4>
+<ul>
+  <li>
+<strong>Re</strong>use <strong>re</strong>corded <strong>re</strong>solution</li>
+  <li>Preserves pre-image to simplify conflicts</li>
+</ul>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git config rerere.enable <span class="nb">true</span>
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="capturing-pieces-of-history">Capturing pieces of history</h2>
+
+<p>Craft and acquire commits with selective, as-needed commands.</p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># Generate new commit from specified commit
+$ git cherry-pick [commit]
+
+# List branches containing same patch
+$ git cherry [comparison-branch]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># Stage the file from a specific commit
+git checkout [commit] -- [path]
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Capture select commits and generate new history on separate branches</li>
+  <li>Determine commit history existence in independent branches</li>
+  <li>Capture path-specific change from a commit with multiple files</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-4">Details</h3>
+<p>Capturing changes from other branches or in orphaned commit history becomes a useful and timesaving operation. With <code class="highlighter-rouge">cherry-pick</code>, authorship and attribution fields remain, versioned changes are carried over, and a new commit is generated.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Generate new commit on current branch with patch of specified commit</span>
+<span class="gp">$ </span>git cherry-pick <span class="o">[</span>commit]
+
+<span class="c"># List branches containing same patch</span>
+<span class="gp">$ </span>git cherry <span class="o">[</span>comparison-branch]
+</code></pre>
+</div>
+
+<p>Use <code class="highlighter-rouge">checkout</code> to get the functionality of <code class="highlighter-rouge">cherry-pick</code> without automatically creating a new commit.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Stage the versioned file from a specific commit</span>
+git checkout <span class="o">[</span>commit] -- <span class="o">[</span>path]
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="rewriting-and-crafting-history">Rewriting and crafting history</h2>
+
+<p>Rebase and reorder existing commits for improved historical context.</p>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/rebase-01.svg" alt="Rebase"></p>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/rebase-02.svg" alt="Rebase"></p>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/rebase-03.svg" alt="Rebase"></p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git rebase [base-commit]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git pull --rebase
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git config branch.autosetuprebase
+$ git config branch.[master].rebase true
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/rebase-interactive-01.svg" alt="Rebase"></p>
+
+<hr>
+
+<hr>
+
+<p><img src="../assets/diagrams/rebase-interactive-02.svg" alt="Rebase"></p>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git rebase -i [base-commit]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># When commits contain `fixup!` or `squash!`
+$ git rebase -i --autosquash [base-commit]
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Replay branch history with <code class="highlighter-rouge">rebase</code>
+</li>
+  <li>Understand the side effects of rewriting history</li>
+  <li>Rewrite history interactively with <code class="highlighter-rouge">rebase -i</code>
+</li>
+  <li>Resolve merge conflicts during a rebase</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-5">Details</h3>
+<p>Use <code class="highlighter-rouge">rebase</code> to edit existing commit history. But pay close attention to how it differs from <code class="highlighter-rouge">merge</code></p>
+
+<h4 id="rebasing-a-branch">Rebasing a branch</h4>
+<p>Re-playing branch-specific commits against a base is the most common use case for rebase.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git checkout &lt;featurebranch&gt;
+<span class="gp">$ </span>git rebase master
+</code></pre>
+</div>
+
+<h4 id="rebase-configuration">Rebase configuration</h4>
+<p><code class="highlighter-rouge">pull</code> can be configured to replay all local commits ahead of the incoming upstream ones.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git config pull.rebase <span class="nb">true</span>
+</code></pre>
+</div>
+
+<h4 id="handling-conflicts">Handling conflicts</h4>
+<p>Resolving a conflict during a rebase requires intervention, and then signaling that the conflict is resolved.</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># fix conflicts</span>
+<span class="gp">$ </span>git add <span class="o">[</span>conflict-free file]
+<span class="gp">$ </span>git rebase --continue
+</code></pre>
+</div>
+
+<h4 id="reordering-history">Reordering History</h4>
+<p>The <code class="highlighter-rouge">rebase -i</code> command operates similarly to <code class="highlighter-rouge">rebase</code> in its plain form, but allows for reordering commits, discarding commits, and revising existing commits.</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Rewrite any commits back to specified base commit</span>
+<span class="gp">$ </span>git rebase -i &lt;commit&gt;
+</code></pre>
+</div>
+
+<p>Rewriting shared repository history is typically inadvisable and is easily avoided by using remote branches as the base commit of a <code class="highlighter-rouge">rebase</code>.</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git rebase -i <span class="o">[</span>remote]/[branch]
+</code></pre>
+</div>
+
+<p>Automatically arrange history and <code class="highlighter-rouge">rebase -i</code> steps with <code class="highlighter-rouge">fixup!</code> and <code class="highlighter-rouge">squash!</code>. Prefix messages of work-in-progress commits to efficiently collapse them during an interactive rebase.</p>
+
+<div class="language-bash highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git rebase -i --autosquash <span class="o">[</span>ref]
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="reviewing--synchronizing">Reviewing &amp; synchronizing</h2>
+
+<p>Interact, investigate, and integrate remote repository histories.</p>
+
+<hr>
+
+<hr>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git remote -v
+<span class="gp">$ </span>git branch -vv
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git remote show &lt;remote-name&gt;
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># List refs of upstream</span>
+<span class="gp">$ </span>git ls-remote <span class="o">[</span>remote]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>git pull [remote] [pull-request-namespace]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># Retrieve, store as temporary branch
+$ git fetch [remote] refs/pull/[num]/head
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git show FETCH_HEAD
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git merge --no-commit --no-ff FETCH_HEAD
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Review GitHub Pull Requests from the command line</li>
+  <li>Get Pull Request history temporarily and with branches</li>
+  <li>Customize <code class="highlighter-rouge">fetch</code> operations with <em>refspecs</em>
+</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-6">Details</h3>
+<h4 id="reviewing-remote-branches">Reviewing remote branches</h4>
+<ul>
+  <li>PRs to horizontal contributors</li>
+  <li>PRs multiple levels up</li>
+  <li>Converting Issues to PRs</li>
+  <li>PRs as Issues with code</li>
+  <li>Automatic closing of PRs by local merges</li>
+  <li>Merges must be <em>made by recursive</em>
+</li>
+  <li>Retrieving PRs locally to resolve conflicts
+(without locally merging to target branch)</li>
+</ul>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git ls-remote origin
+<span class="gp">$ </span>git fetch origin refs/pull/1/head
+
+<span class="gp">$ </span>git show FETCH_HEAD
+<span class="gp">$ </span>git merge --no-commit --no-ff FETCH_HEAD
+</code></pre>
+</div>
+
+<h4 id="examining-remote-branches">Examining remote branches</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git remote -v
+<span class="gp">$ </span>git remote show &lt;remote-name&gt;
+<span class="gp">$ </span>git ls-remote
+<span class="gp">$ </span>git branch -vv
+</code></pre>
+</div>
+
+<h4 id="retrieving-arbitrary-commits">Retrieving arbitrary commits</h4>
+<p>To just retrieve the commits to <code class="highlighter-rouge">FETCH_HEAD</code>:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git fetch <span class="o">[</span>remote] <span class="o">[</span>pull-request-namespace]
+</code></pre>
+</div>
+
+<p>To merge the retrieved commits into a branch:</p>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git pull <span class="o">[</span>remote] <span class="o">[</span>pull-request-namespace]
+</code></pre>
+</div>
+
+<h4 id="leveraging-fetch_head">Leveraging FETCH_HEAD</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git fetch &lt;URL&gt; &lt;branch&gt;
+<span class="gp">$ </span>git checkout FETCH_HEAD
+<span class="gp">$ </span>git branch &lt;newbranchname&gt; FETCH_HEAD
+</code></pre>
+</div>
+
+<h4 id="what-are-refspecs">What are refspecs?</h4>
+<ul>
+  <li>Specification for retrieval and pushing</li>
+  <li>Used implicitly during fetch, pull, and push</li>
+  <li>Altered by option switches like <code class="highlighter-rouge">--tags</code>
+</li>
+  <li>Stored in <code class="highlighter-rouge">.git/config</code>
+</li>
+  <li>Ability to retrieve Pull Request branches</li>
+</ul>
+
+<h4 id="refspec-examples">Refspec examples</h4>
+<div class="highlighter-rouge">
+<pre class="highlight"><code> Source and destination refspecs
+$ git fetch [repo-url] [source]:[destination]
+
+$ git fetch [repo-url] master
+ * branch     master     -&gt; FETCH_HEAD
+
+$ git fetch origin refs/pull/1/head
+ * branch     refs/pull/1/head -&gt; FETCH_HEAD
+</code></pre>
+</div>
+
+<h4 id="refspec-to-retrieve-pull-requests">Refspec to retrieve Pull Requests</h4>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="filtering-histories--externalizing-dependencies">Filtering histories &amp; externalizing dependencies</h2>
+
+<p>Separate single, large repository histories into individual projects.</p>
+
+<hr>
+
+<hr>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Rewrite all history with</span>
+<span class="c"># respect to files in directory</span>
+<span class="gp">$ </span>git filter-branch
+--subdirectory-filter <span class="o">[</span>dir]
+-- --all
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># Rewrite history, applying Git command
+# across all commits
+$ git filter-branch --index-filter
+'git rm --cached
+--ignore-unmatch [file]' HEAD
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git submodule add [repo-url] [folder]
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git submodule init
+$ git submodule update
+
+# OR
+
+$ git clone --recursive [url]
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Separate versioned content in a repository into a separate one</li>
+  <li>Clean up unwanted history repository-wide with <code class="highlighter-rouge">filter-branch</code>
+</li>
+  <li>Incorporate external repositories as dependencies with <code class="highlighter-rouge">submodule</code>
+</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-7">Details</h3>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Rewrite all history with respect to files in [dir]</span>
+<span class="gp">$ </span>git filter-branch
+    --subdirectory-filter <span class="o">[</span>dir]
+    -- --all
+
+<span class="c"># Rewrite history, applying `git rm` across all commits</span>
+<span class="gp">$ </span>git filter-branch --index-filter
+    <span class="s1">'git rm --cached
+    --ignore-unmatch [file]'</span> HEAD
+</code></pre>
+</div>
+
+<h4 id="adding-submodules">Adding submodules</h4>
+<p>Add a separate repository as a subdirectory:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git submodule add [repo-url] [folder]
+</code></pre>
+</div>
+
+<h4 id="using-submodules">Using submodules</h4>
+<p>For a freshly cloned repository with submodules</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code> Step-by-step
+$ git submodule init
+$ git submodule update
+
+ Single process with option switches
+$ git submodule update --init --recursive
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="signing-work">Signing work</h2>
+
+<p>Verify authenticity with GPG keys</p>
+
+<hr>
+
+<hr>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git commit --signoff
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Display signatures per commit</span>
+<span class="gp">$ </span>git log --show-signature
+</code></pre>
+</div>
+
+<hr>
+
+<hr>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code># Merge only if all signatures match public keys
+$ git merge --verify-signatures
+</code></pre>
+</div>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Use a GPG key to sign a specific commit</li>
+  <li>Verify a signed commit</li>
+  <li>Use a GPG key to sign a Git tag</li>
+  <li>Verify a signed tag</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-8">Details</h3>
+<h4 id="configuring-gpg">Configuring GPG</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>gpg --list-keys
+pub   1024D/627CBB21 2014-08-01
+uid                  Matthew McCullough
+
+ Use 627CBB21 as the signing key<span class="s1">'s ID
+$ git config --global user.signingkey [ID]
+</span></code></pre>
+</div>
+
+<h4 id="using-gpg-signatures-on-commits">Using GPG signatures on commits</h4>
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="gp">$ </span>git commit --gpg-sign
+<span class="c"># or the shorthand invocation...</span>
+<span class="gp">$ </span>git commit -S
+
+<span class="c"># Display signatures per commit</span>
+<span class="gp">$ </span>git log --show-signature
+
+<span class="c"># Merge only if all signatures match public keys</span>
+<span class="gp">$ </span>git merge --verify-signatures
+</code></pre>
+</div>
+
+<h4 id="using-gpg-signatures-on-tags">Using GPG signatures on tags</h4>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code><span class="c"># Create a signed tag</span>
+<span class="gp">$ </span>git tag -s <span class="o">[</span>tag-name] <span class="o">[</span>commit]
+
+<span class="c"># Verify signature of tag</span>
+<span class="gp">$ </span>git tag -v <span class="o">[</span>tag-name]
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="using-github-cli-and-the-api">Using GitHub CLI and the API</h2>
+
+<p>Use GitHub features directly from the command line.</p>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Create a GitHub (public or private) repository from the command line</li>
+  <li>Create a tracking branch and open a Pull Request from the command line</li>
+  <li>Clone a public, open source repository and Fork it from the command line</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-9">Details</h3>
+
+<h4 id="command-line-interface">Command line interface</h4>
+<ul>
+  <li>Uses the API for interfacing with your repos</li>
+  <li>Stores OAuth token, credentials</li>
+  <li>Highly efficient for power-users</li>
+  <li>Hub and GH merging into one project</li>
+</ul>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code> Create a new public repository on your GitHub account
+<span class="gp">$ </span>gh create
+
+ Create a new private repository on your GitHub account
+<span class="gp">$ </span>gh create -p
+
+ Open a Pull Request <span class="k">for </span>the current branch
+<span class="gp">$ </span>gh pull-request
+
+ Create a fork of the cloned repository on your GitHub Account
+<span class="gp">$ </span>gh fork
+
+ Launch a web browser with the branch comparison view
+<span class="gp">$ </span>gh compare
+
+ Launch a web browser to the repository home page
+<span class="gp">$ </span>gh browse
+</code></pre>
+</div>
+
+<h4 id="the-github-api">The GitHub API</h4>
+
+<div class="language-shell highlighter-rouge">
+<pre class="highlight"><code> Anonymous
+<span class="gp">$ </span>curl &lt;URL&gt;
+
+ Pass credentials on CLI
+<span class="gp">$ </span>curl -u &lt;user:password&gt; &lt;URL&gt;
+
+ Use .netrc file
+<span class="gp">$ </span>curl -n &lt;URL&gt;
+</code></pre>
+</div>
+
+<p>There are a number of libraries for interfacing with the GitHub API, all of which are available at <a href="http://octokit.github.io/">octokit.github.io</a></p>
+
+<hr>
+
+<h2 id="diff--merge-tool">Diff &amp; merge tool</h2>
+
+<p>Go beyond command line comparison with visual tooling.</p>
+
+<hr>
+
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    
+<ol>
+  <li>Setup a preferred visual tool for diff and merge operations</li>
+  <li>Run the <code class="highlighter-rouge">difftool</code> to compare uncommitted file changes</li>
+  <li>Generate a merge conflict and resolve using a <code class="highlighter-rouge">mergetool</code>
+</li>
+</ol>
+
+  </div>
+</div>
+
+<h3 id="details-10">Details</h3>
+<ul>
+  <li><a href="https://atom.io/packages/merge-conflicts">Atom Merge Conflict plugin</a></li>
+  <li><a href="http://www.perforce.com/downloads/Perforce/20-User">P4Merge</a></li>
+  <li>Opendiff</li>
+  <li>KDiff</li>
+  <li>Kaleidoscope</li>
+  <li>Vimdiff</li>
+  <li>Meld</li>
+</ul>
+
+<p>Difftool execution:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git difftool --tool-help
+$ git config diff.tool &lt;tool-name-in-config&gt;
+$ git config difftool.prompt false
+$ git config difftool.&lt;tool-name&gt;.cmd "&lt;path [args]&gt;"
+</code></pre>
+</div>
+
+<p>A sample <code class="highlighter-rouge">.gitconfig</code> file:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>[diff]
+    tool = p4merge
+[difftool "p4merge"]
+    cmd = "/Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE"
+[difftool]
+    prompt = false
+</code></pre>
+</div>
+
+<p>Mergetool execution:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>$ git config --global merge.tool p4mergetool
+
+$ git config --global mergetool.p4mergetool.cmd "/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
+
+$ git config --global mergetool.p4mergetool.trustExitCode false
+
+$ git config --global mergetool.keepBackup false
+</code></pre>
+</div>
+
+<p>A sample <code class="highlighter-rouge">.gitconfig</code> file:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>[merge]
+    tool = Kaleidoscope
+[mergetool "p4mergetool"]
+    cmd = " /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED"
+    keepBackup = false
+</code></pre>
+</div>
+
+<hr>
+
+<h2 id="additional-resources">Additional resources</h2>
+
+<hr>
+
+<h3 id="details-11">Details</h3>
+<p>This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We’ve included some of the most useful resources for our students with insatiable appetites.</p>
+
+<h4 id="advanced-git-videos">Advanced Git Videos</h4>
+<ul>
+  <li><a href="http://vimeo.com/49444883">Advanced Git, presented at JavaZone</a></li>
+  <li><a href="http://bit.ly/ogitvid2">Mastering Advanced Git, O’Reilly video series</a></li>
+  <li><a href="http://www.youtube.com/watch?v=qh-R0-7Ii_U">The Fringes of Git, Git internals video</a></li>
+  <li><a href="http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772">Git and GitHub LiveLessons, Pearson InformIT LiveLessons (Workshop)</a></li>
+</ul>
+
+<h4 id="tools">Tools</h4>
+<ul>
+  <li><a href="https://github.com/jingweno/gh"><code class="highlighter-rouge">gh</code>, GitHub command line utility</a></li>
+  <li><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh, ZSH plugin framework</a></li>
+</ul>
+
+<h4 id="git-documentation">Git Documentation</h4>
+<ul>
+  <li><a href="https://www.kernel.org/pub/software/scm/git/docs/git.html">Git <code class="highlighter-rouge">man</code> page command documentation</a></li>
+</ul>
+
+</div>
+
+
+<div class="col-toc col-md-2 col-sm-2 col-xs-2 shift-left">
+  <div id="toc-wrapper">
+    <div id="toc" data-spy="affix" data-offset-top="145">
+      <h4>Table of Contents</h4>
+      <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
+        <li>
+      </li>
+</ul>
+      <ul class="nav display-controls">
+        <li>
+          <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
+          <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
+        </li>
+        <li>
+          <div class="timer-toggle"></div>
+          <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
+          <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <footer class="bg-gray-light border-top py-4 text-gray text-center mt-6 flex-none">
+  <span aria-label="Made with love by GitHub and friends">
+    <a href="/community/" class="text-gray-dark mb-2">Made with <img class="emoji" title=":heart:" alt=":heart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png" height="20" width="20" align="absmiddle"> by <img class="emoji" title=":octocat:" alt=":octocat:" src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle">s and friends</a>
+  </span>  
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="/feed.xml" class="d-flex flex-items-center text-gray text-uppercase mr-4"><div class="d-flex mr-1"><svg width="10" height="16" viewbox="0 0 10 16" xmlns="http://www.w3.org/2000/svg"><title>rss</title>
+<path d="M2 13H0v-2c1.11 0 2 .89 2 2zM0 3v1a9 9 0 0 1 9 9h1C10 7.48 5.52 3 0 3zm0 4v1c2.75 0 5 2.25 5 5h1c0-3.31-2.69-6-6-6z" fill="#000" fill-rule="evenodd"></path></svg></div> Feed</a>
+    <a href="/community" class="d-flex flex-items-center text-gray text-uppercase"><div class="d-flex mr-1"><svg width="16" height="16" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>organization</title>
+<path d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4" fill="#221F20" fill-rule="evenodd"></path></svg></div> Community</a>
+  </div>
+  
+  <p>© 2018 GitHub, Inc. Powered by <a href="http://jekyllrb.com" rel="nofollow" class="text-gray-dark">Jekyll</a> &amp; <a href="https://github.com/primer/primer-css" rel="nofollow" class="text-gray-dark">Primer</a>.</p>
+</footer>
+
+  </body>
+</html>
