@@ -1,61 +1,58 @@
-# For Atom Feed
+---
+title: On Demand Training
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    lang: en
 domain: services.github.com
 author: GitHub, Inc.
 email: services@github.com
-
-
-# Site Settings
-locale                   : "en-US"
-# Keep original, do not replace
-title                    : "On Demand Training"
-title_separator          : "-"
-name                     : "GitHub, Inc."
-description              : "You're in control. We're with you along the way."
-baseurl                  :  # the subpath of your site, e.g. "/blog"
-gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : true # true, false (default)
-words_per_minute         : 200
+locale: en-US
+title_separator: "-"
+name: GitHub, Inc.
+description: You're in control. We're with you along the way.
+baseurl: 
+gh_repo: 
+teaser: 
+breadcrumbs: true
+words_per_minute: 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
+  provider: 
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: 
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server: 
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-
-
-
-
+    appid: 
+    num_posts: 
+    colorscheme: 
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider: google
   google:
-    tracking_id          : UA-3769691-2
-
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Conversion
+    tracking_id: UA-3769691-2
+markdown_ext: markdown,mkdown,mkdn,mkd,md
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
-# standard jekyll configuration
-
 parentsite: https://services.github.com
-permalink: /articles/:title/
+permalink: "/articles/:title/"
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jekyll-feed
+- jemoji
 exclude:
 - bin
 - config.rb
@@ -67,28 +64,12 @@ exclude:
 - README.md
 - script
 - vendor
-
-collections:
-  modules:
-    output: true
-  courses:
-    output: true
-
 include:
 - _stylesheets
 - _javascript
 sass:
   load_paths:
-    - assets/_scss
-    - node_modules
-  style: :compressed
-
-# Custom site configuration
+  - assets/_scss
+  - node_modules
+  style: compressed
 lang: en
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      lang: "en"
