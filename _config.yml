@@ -1,6 +1,5 @@
 ---
 title: Portfolio
-variable: everything
 timezone: UTC
 collections:
   posts:
@@ -17,39 +16,40 @@ defaults:
     path: ''
   values:
     lang: en
-domain:
-author:
-email:
+variable: everything
+domain: 
+author: 
+email: 
 locale: en-US
 title_separator: "-"
-name:
-description:
-baseurl:
-gh_repo:
-teaser:
+name: 
+description: 
+baseurl: 
+gh_repo: 
+teaser: 
 breadcrumbs: true
 words_per_minute: 200
 comments:
-  provider:
+  provider: 
   disqus:
-    shortname:
+    shortname: 
   discourse:
-    server:
+    server: 
   facebook:
-    appid:
-    num_posts:
-    colorscheme:
+    appid: 
+    num_posts: 
+    colorscheme: 
 analytics:
-  provider:
+  provider: 
   google:
-    tracking_id:
+    tracking_id: 
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-parentsite:
+parentsite: 
 permalink: "/articles/:title/"
 plugins:
 - jekyll-paginate
