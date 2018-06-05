@@ -11,7 +11,7 @@ collections:
   main_header:
     title: main_header
     output: true
-    permalink: "/"
+    permalink: main_header
   page-header:
     title: page_header
     output: true
