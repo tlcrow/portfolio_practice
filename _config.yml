@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-  anything:
+  main_header:
     title: main_header
     output: true
     permalink: "/"
