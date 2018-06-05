@@ -8,12 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
-  main_header:
-    title: main_header
-    output: true
-    permalink: main_header
-  page-header:
-    title: page_header
+  "-":
+    title: index
     output: true
     permalink: "/"
 defaults:
