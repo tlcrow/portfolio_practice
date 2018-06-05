@@ -15,6 +15,7 @@ collections:
   page-header:
     title: page_header
     output: true
+    permalink: "/"
 defaults:
 - scope:
     path: ''
