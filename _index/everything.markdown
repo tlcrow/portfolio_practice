@@ -4,6 +4,7 @@ main_header:
   a: how
   b: what
   c: when
+tagline_text:
 layout: default
 ---
 
