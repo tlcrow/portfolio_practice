@@ -12,6 +12,9 @@ collections:
     title: main_header
     output: true
     permalink: "/"
+  page-header:
+    title: page_header
+    output: true
 defaults:
 - scope:
     path: ''
