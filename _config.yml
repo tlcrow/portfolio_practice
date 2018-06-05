@@ -8,10 +8,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-  main_header:
+  "-":
     title: index
     output: true
-    permalink: main_header
+    permalink: "/"
 defaults:
 - scope:
     path: ''
