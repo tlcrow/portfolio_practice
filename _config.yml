@@ -9,13 +9,9 @@ collections:
     title: Uploads
     output: true
   main_header:
-    title: main_header
+    title: index
     output: true
     permalink: main_header
-  page-header:
-    title: page_header
-    output: true
-    permalink: "/"
 defaults:
 - scope:
     path: ''
